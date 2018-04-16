@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" styleClass="anchor" stylesheets="@../Style/sty.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Cequilsvoient.ListInscriptController">
+   <children>
+      <JFXTreeTableView fx:id="tabInsc" layoutX="83.0" layoutY="47.0" prefHeight="536.0" prefWidth="727.0" />
+      <JFXButton fx:id="retour" buttonType="RAISED" layoutX="70.0" layoutY="648.0" onAction="#gMenu" style="-fx-background-color: #00bcd4;" text="Retour au menu" textFill="WHITE">
+         <font>
+            <Font name="Kollektif" size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="payer" buttonType="RAISED" layoutX="846.0" layoutY="324.0" onAction="#gPaie" style="-fx-background-color: #23dbdb;" text="Attribuer paiement" textFill="WHITE">
+         <font>
+            <Font name="Kollektif" size="15.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="667.0" layoutY="622.0" style="-fx-background-color: #db235d;" text="Supprimer Inscription" textFill="WHITE">
+         <font>
+            <Font name="Kollektif" size="15.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

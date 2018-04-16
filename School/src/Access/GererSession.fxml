@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" styleClass="anchor" stylesheets="@../Style/sty.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Access.GererSessionController">
+   <children>
+      <Label layoutX="339.0" layoutY="293.0" text="Espace en cours de création..." textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="gMenu" buttonType="RAISED" layoutX="159.0" layoutY="502.0" onAction="#versAd" style="-fx-background-color: #00bcd4;" text="retour au menu" textFill="WHITE">
+         <font>
+            <Font name="Kollektif" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

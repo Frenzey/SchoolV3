@@ -1,0 +1,4 @@
+Vous trouverez ci-joint 2 dossier. Le dossier "School" comporte l'interface graphique et quelques fonctions.
+Le second "autre classes" comporte les mêmes class java avec quelques améliorations notamment avec le fichier
+interface et le fichier Admin.java. Faute de temps, nous n'avons pas pu implémenter toutes les méthodes dans le code
+mais nous espérons vous envoyer un programme effectif d'ici la semaine prochaine.

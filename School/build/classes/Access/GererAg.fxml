@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" styleClass="anchor" stylesheets="@../Style/sty.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Access.GererAgController">
+   <children>
+      <VBox layoutX="165.0" layoutY="49.0" prefHeight="581.0" prefWidth="695.0" spacing="30.0">
+         <children>
+            <Label text="Agents" textFill="WHITE">
+               <font>
+                  <Font name="Kollektif Bold" size="31.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="465.0" prefWidth="695.0" spacing="20.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <Label text="Liste des:">
+                           <font>
+                              <Font name="Kollektif" size="19.0" />
+                           </font>
+                        </Label>
+                        <JFXComboBox />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="514.0" prefWidth="695.0" spacing="30.0">
+                     <children>
+                        <JFXTreeTableView prefHeight="429.0" prefWidth="359.0" style="-fx-background-color: #56ae9b;" />
+                        <VBox prefHeight="488.0" prefWidth="332.0" spacing="25.0">
+                           <children>
+                              <JFXTextField focusColor="WHITE" labelFloat="true" promptText="NOM" unFocusColor="#56ae9b">
+                                 <font>
+                                    <Font name="Kollektif" size="15.0" />
+                                 </font></JFXTextField>
+                              <JFXTextField focusColor="WHITE" labelFloat="true" promptText="PRENOM" unFocusColor="#56ae9b">
+                                 <font>
+                                    <Font name="Kollektif" size="15.0" />
+                                 </font></JFXTextField>
+                              <VBox prefHeight="58.0" prefWidth="284.0" spacing="10.0">
+                                 <children>
+                                    <Label text="GENRE:">
+                                       <font>
+                                          <Font name="Kollektif" size="12.0" />
+                                       </font></Label>
+                                    <HBox prefHeight="78.0" prefWidth="284.0" spacing="15.0">
+                                       <children>
+                                          <JFXRadioButton text="H">
+                                             <font>
+                                                <Font name="Kollektif Bold" size="12.0" />
+                                             </font></JFXRadioButton>
+                                          <JFXRadioButton text="F">
+                                             <font>
+                                                <Font name="Kollektif Bold" size="12.0" />
+                                             </font></JFXRadioButton>
+                                       </children>
+                                       <padding>
+                                          <Insets left="30.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                 <children>
+                                    <Label text="TYPE:">
+                                       <font>
+                                          <Font name="Kollektif" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXComboBox />
+                                 </children>
+                              </HBox>
+                              <JFXTextField focusColor="WHITE" labelFloat="true" promptText="ADRESSE" unFocusColor="#56ae9b">
+                                 <font>
+                                    <Font name="Kollektif" size="15.0" />
+                                 </font></JFXTextField>
+                              <JFXDatePicker defaultColor="#1dd0be" promptText="DATE DE NAISSANCE" />
+                              <JFXTextField focusColor="WHITE" labelFloat="true" promptText="LIEU DE NAISSANCE" unFocusColor="#56ae9b">
+                                 <font>
+                                    <Font name="Kollektif" size="15.0" />
+                                 </font></JFXTextField>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <Label text="N° DE TELEPHONE">
+                                       <font>
+                                          <Font name="Kollektif" size="13.0" />
+                                       </font></Label>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                                       <children>
+                                          <JFXTextField focusColor="WHITE" labelFloat="true" promptText="MOBILE:" unFocusColor="#56ae9b">
+                                             <font>
+                                                <Font name="Kollektif" size="15.0" />
+                                             </font></JFXTextField>
+                                          <JFXTextField focusColor="WHITE" labelFloat="true" promptText="FIXE:" unFocusColor="#56ae9b">
+                                             <font>
+                                                <Font name="Kollektif" size="15.0" />
+                                             </font></JFXTextField>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox prefHeight="28.0" prefWidth="695.0" spacing="20.0">
+               <children>
+                  <JFXButton buttonType="RAISED" style="-fx-background-color: #db235d;" text="SUPPR" textFill="WHITE">
+                     <font>
+                        <Font name="Kollektif Bold" size="20.0" />
+                     </font></JFXButton>
+                  <JFXButton buttonType="RAISED" style="-fx-background-color: #23dbdb;" text="EDIT" textFill="WHITE">
+                     <font>
+                        <Font name="Kollektif Bold" size="20.0" />
+                     </font></JFXButton>
+                  <JFXButton buttonType="RAISED" style="-fx-background-color: #e8e8e8;" text="AJOUT" textFill="WHITE">
+                     <font>
+                        <Font name="Kollektif Bold" size="20.0" />
+                     </font></JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="240.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <JFXButton fx:id="retour" buttonType="RAISED" layoutX="62.0" layoutY="704.0" onAction="#bMenu" style="-fx-background-color: #00bcd4;" text="Retour au menu" textFill="WHITE">
+         <font>
+            <Font name="Kollektif" size="15.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

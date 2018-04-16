@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" styleClass="anchor" stylesheets="@../Style/sty.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Access.GererPaieController">
+   <children>
+      <VBox layoutX="208.0" layoutY="14.0" prefHeight="688.0" prefWidth="688.0" spacing="30.0" styleClass="card">
+         <children>
+            <Label prefHeight="26.0" prefWidth="690.0" text="Paiement" textFill="WHITE">
+               <padding>
+                  <Insets bottom="5.0" left="270.0" right="10.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="Kollektif Bold" size="31.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="305.0" prefWidth="688.0" spacing="10.0">
+               <children>
+                  <TableView prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #56ae9b;">
+                     <columns>
+                        <TableColumn prefWidth="66.0" text="ID" />
+                        <TableColumn prefWidth="71.0" text="NOM" />
+                        <TableColumn prefWidth="94.0" text="PRENOM" />
+                        <TableColumn prefWidth="133.0" text="ADRESSE" />
+                        <TableColumn prefWidth="98.0" text="EMAIL" />
+                        <TableColumn prefWidth="119.0" text="TELEPHONE" />
+                        <TableColumn prefWidth="105.0" text="MONTANT" />
+                     </columns>
+                  </TableView>
+                  <JFXButton buttonType="RAISED" style="-fx-background-color: #E8357E;" text="Supprimer paiement" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="460.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Kollektif Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <JFXTextField editable="false" focusColor="WHITE" labelFloat="true" promptText="NOM" unFocusColor="#56ae9b">
+               <font>
+                  <Font name="Kollektif" size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField editable="false" focusColor="WHITE" labelFloat="true" promptText="PRENOM" unFocusColor="#56ae9b">
+               <font>
+                  <Font name="Kollektif" size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField focusColor="WHITE" labelFloat="true" promptText="MONTANT" unFocusColor="#56ae9b">
+               <font>
+                  <Font name="Kollektif" size="19.0" />
+               </font>
+            </JFXTextField>
+            <VBox prefHeight="200.0" prefWidth="688.0" spacing="25.0">
+               <children>
+                  <Label text="Methode de paiement" textFill="WHITE">
+                     <font>
+                        <Font name="Kollektif" size="19.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                     <children>
+                        <JFXRadioButton text="Paypal">
+                           <font>
+                              <Font name="Kollektif Bold" size="20.0" />
+                           </font>
+                           <toggleGroup>
+                              <ToggleGroup fx:id="money" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton text="CB" toggleGroup="$money">
+                           <font>
+                              <Font name="Kollektif Bold" size="20.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton text="Espèce" toggleGroup="$money">
+                           <font>
+                              <Font name="Kollektif Bold" size="21.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton text="Chèque" toggleGroup="$money">
+                           <font>
+                              <Font name="Kollektif Bold" size="21.0" />
+                           </font>
+                        </JFXRadioButton>
+                        <JFXRadioButton text="Autre" toggleGroup="$money">
+                           <font>
+                              <Font name="Kollektif Bold" size="21.0" />
+                           </font>
+                        </JFXRadioButton>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="15.0" top="10.0" />
+               </padding>
+            </VBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton buttonType="RAISED" prefHeight="43.0" prefWidth="360.0" style="-fx-background-color: #22b529; -fx-text-fill: #ffffff;" text="Enregistrer Paiement">
+                     <font>
+                        <Font name="Kollektif Bold" size="23.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="160.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <JFXButton fx:id="back" buttonType="RAISED" layoutX="48.0" layoutY="702.0" onAction="#backToM" style="-fx-background-color: #00bcd4;" text="Retour au menu" textFill="WHITE">
+         <font>
+            <Font name="Kollektif" size="15.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

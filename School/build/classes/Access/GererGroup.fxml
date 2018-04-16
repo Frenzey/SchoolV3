@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" styleClass="anchor" stylesheets="@../Style/sty.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Access.GererGroupController">
+   <children>
+      <VBox layoutX="200.0" layoutY="52.0" prefHeight="664.0" prefWidth="764.0" spacing="40.0">
+         <children>
+            <Label text="Groupe" textFill="WHITE">
+               <font>
+                  <Font name="Kollektif Bold" size="31.0" />
+               </font></Label>
+            <HBox prefHeight="312.0" prefWidth="764.0" spacing="30.0">
+               <children>
+                  <VBox prefHeight="240.0" prefWidth="426.0" spacing="10.0" style="-fx-background-color: #80deea;">
+                     <children>
+                        <Label text="Liste des Étudiants" textFill="WHITE">
+                           <font>
+                              <Font name="Kollektif" size="18.0" />
+                           </font></Label>
+                        <HBox prefHeight="219.0" prefWidth="392.0">
+                           <children>
+                              <JFXTreeTableView prefHeight="209.0" prefWidth="213.0" style="-fx-background-color: #56ae9b;" />
+                              <VBox prefHeight="209.0" prefWidth="214.0">
+                                 <children>
+                                    <JFXButton buttonType="RAISED" prefHeight="26.0" prefWidth="191.0" style="-fx-background-color: #23dbdb;" text="Ajouter étudiant au groupe" textFill="WHITE">
+                                       <font>
+                                          <Font name="Kollektif" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="100.0" />
+                                       </VBox.margin></JFXButton>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="240.0" prefWidth="377.0">
+                     <children>
+                        <VBox prefHeight="240.0" prefWidth="330.0" spacing="10.0" style="-fx-background-color: #80deea;">
+                           <children>
+                              <Label text="Liste des Groupes" textFill="WHITE">
+                                 <font>
+                                    <Font name="Kollektif" size="18.0" />
+                                 </font></Label>
+                              <HBox prefHeight="219.0" prefWidth="318.0">
+                                 <children>
+                                    <JFXTreeTableView prefHeight="219.0" prefWidth="207.0" style="-fx-background-color: #56ae9b;" />
+                                    <JFXButton buttonType="RAISED" prefHeight="26.0" prefWidth="191.0" style="-fx-background-color: #db235d;" text="Supprimer un groupe" textFill="WHITE">
+                                       <font>
+                                          <Font name="Kollektif" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="100.0" />
+                                       </HBox.margin></JFXButton>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="25.0" />
+               </padding>
+            </HBox>
+            <VBox prefHeight="282.0" prefWidth="764.0" spacing="20.0">
+               <children>
+                  <Label text="Créer Groupe" textFill="WHITE">
+                     <font>
+                        <Font name="Kollektif" size="18.0" />
+                     </font></Label>
+                  <VBox prefHeight="37.0" prefWidth="764.0">
+                     <children>
+                        <HBox prefHeight="43.0" prefWidth="764.0">
+                           <children>
+                              <Label text="Matière:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Kollektif" size="15.0" />
+                                 </font></Label>
+                              <JFXComboBox prefHeight="25.0" prefWidth="154.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <JFXTextField focusColor="WHITE" labelFloat="true" maxWidth="202.0" minWidth="163.0" prefHeight="31.0" prefWidth="163.0" promptText="TAILLE DU GROUPE:" unFocusColor="#56ae9b">
+                     <font>
+                        <Font name="Kollektif" size="15.0" />
+                     </font></JFXTextField>
+                  <HBox prefHeight="38.0" prefWidth="764.0">
+                     <children>
+                        <Label text="Enseignant" textFill="WHITE">
+                           <font>
+                              <Font name="Kollektif" size="15.0" />
+                           </font></Label>
+                        <JFXComboBox prefHeight="25.0" prefWidth="138.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="38.0" prefWidth="764.0">
+                     <children>
+                        <Label text="Salle:" textFill="WHITE">
+                           <font>
+                              <Font name="Kollektif" size="15.0" />
+                           </font></Label>
+                        <JFXComboBox prefHeight="25.0" prefWidth="175.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="38.0" prefWidth="764.0">
+                     <children>
+                        <Label text="Session:" textFill="WHITE">
+                           <font>
+                              <Font name="Kollektif" size="15.0" />
+                           </font></Label>
+                        <JFXComboBox prefHeight="25.0" prefWidth="157.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="55.0" prefWidth="764.0" spacing="30.0">
+                     <children>
+                        <JFXButton buttonType="RAISED" style="-fx-background-color: #23dbdb;" text="GÉNÉRER" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Kollektif Bold" size="19.0" />
+                           </font></JFXButton>
+                     </children>
+                     <padding>
+                        <Insets left="200.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="250.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+      <JFXButton fx:id="retour" buttonType="RAISED" layoutX="59.0" layoutY="716.0" onAction="#gMenu" style="-fx-background-color: #00bcd4;" text="Retour au menu" textFill="WHITE" />
+   </children>
+</AnchorPane>

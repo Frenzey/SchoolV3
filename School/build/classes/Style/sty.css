@@ -1,0 +1,21 @@
+    .anchor {
+    -fx-background-image:url('file:src/IMG/aquamarine-color-wallpaper-3.jpg');
+    -fx-background-repeat: stretch;
+}
+
+.container{
+
+    -fx-background-color:#80deea;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    
+}
+
+.buttM:hover{
+    
+    -fx-opacity: 0.8;
+    -fx-background-color:#4dd0e1;
+    -fx-cursor:hand;
+
+}
+
